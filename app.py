@@ -10,7 +10,7 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = \
     'sqlite:///' + os.path.join(pjdir, 'data.sqlite')#建立資料庫
     '''
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mssql+pymssql://aiop:P@ssw0rd@10.0.0.171/AIModule'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mssql+pymssql://username:Password@server/database'
 db = SQLAlchemy(app)
 
 class Todo1(db.Model):
